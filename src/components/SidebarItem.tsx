@@ -18,7 +18,7 @@ const SidebarItem = ({
     };
     return (
         <Button
-            className={`flex justify-between w-[200px] cursor-pointer ${
+            className={`flex justify-between min-w-44 max-w-48 cursor-pointer ${
                 active ? "bg-secondary text-primary" : ""
             }  ${className}`}
             variant={"plain"}

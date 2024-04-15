@@ -8,7 +8,7 @@ import Logo from "/public/images/todoIcon.png";
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between px-8 items-center py-4">
+        <div className="flex justify-between px-8 items-center py-4 border-b">
             {/* logo */}
             <div className="flex items-center gap-2">
                 <Image src={Logo} alt="todo logo icon" />

@@ -14,7 +14,7 @@ export default function Home() {
             {/* body */}
             <Tabs defaultValue="account" className=" flex-1 flex flex-row">
                 {/* side bar */}
-                <TabsList className="flex-col bg-[red] max-w-72">
+                <TabsList className="flex-col flex-[0.2] items-end py-8">
                     <TabsTrigger value="account">
                         <SidebarItem icon={<CalendarIcon />} text={"Today"} count={"3 / 7"} />
                     </TabsTrigger>
@@ -23,7 +23,7 @@ export default function Home() {
                     </TabsTrigger>
                 </TabsList>
                 {/* Tab pannel */}
-                <div className="bg-[green] flex-1">
+                <div className="flex-[0.8] p-8">
                     <TabsContent value="account">Make changes to your account here.</TabsContent>
                     <TabsContent value="password">Change your password here.</TabsContent>
                 </div>
