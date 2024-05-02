@@ -8,14 +8,14 @@ import Logo from "/public/images/todoIcon.png";
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between px-8 items-center py-4 border-b">
+        <div className="flex justify-between px-8 items-center border-b h-[10vh]">
             {/* logo */}
             <div className="flex items-center gap-2">
                 <Image src={Logo} alt="todo logo icon" />
                 <p className="font-semibold">TODO</p>
             </div>
             {/* search bar */}
-            <div className="flex border items-center w-[560px] px-4 rounded-lg ">
+            <div className="flex border items-center w-[560px] px-4 rounded-lg">
                 <SearchIcon />
                 <Input placeholder="Search" className="border-none" />
             </div>

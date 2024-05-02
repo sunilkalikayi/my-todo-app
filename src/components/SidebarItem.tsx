@@ -1,5 +1,4 @@
-import { ReactNode, useState } from "react";
-import { Button } from "./ui/button";
+import { ReactNode } from "react";
 
 const SidebarItem = ({
     icon,
@@ -12,18 +11,8 @@ const SidebarItem = ({
     count: number | string;
     className?: string;
 }) => {
-    const [active, setActive] = useState<boolean>(false);
-    const handleOnclick = () => {
-        setActive(!active);
-    };
     return (
-        <Button
-            className={`flex justify-between min-w-44 max-w-48 cursor-pointer ${
-                active ? "bg-secondary text-primary" : ""
-            }  ${className}`}
-            variant={"plain"}
-            onClick={handleOnclick}
-        >
+        <div className={`flex justify-between w-52 cursor-pointer h-10 items-center ${className}`}>
             <div className="flex gap-2 items-center">
                 {/* Icon */}
                 <div>{icon}</div>
@@ -33,7 +22,7 @@ const SidebarItem = ({
 
             {/* count */}
             <p>{count}</p>
-        </Button>
+        </div>
     );
 };
 
